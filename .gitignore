@@ -1,0 +1,9 @@
+node_modules
+.env
+# native build outputs (the android/ and ios/ projects themselves are committed)
+android/app/build
+android/build
+android/.gradle
+android/local.properties
+ios/App/Pods
+ios/App/build

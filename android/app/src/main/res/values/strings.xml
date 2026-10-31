@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Diko</string>
+    <string name="title_activity_main">Diko</string>
+    <string name="package_name">com.casinodiko.app</string>
+    <string name="custom_url_scheme">com.casinodiko.app</string>
+</resources>
