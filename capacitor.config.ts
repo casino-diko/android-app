@@ -6,8 +6,9 @@
  |   DIKO_SITE_URL=https://games.example.com npx cap sync
  |
  | The site recognises the app by "DikoApp" in the user agent (it then skips
- | the browser's "play in full screen?" prompt). www/offline.html shows when
- | the site can't be reached.
+ | the browser's "play in full screen?" prompt). The app runs full screen:
+ | on Android, MainActivity hides the status and navigation bars until they
+ | are swiped in. www/offline.html shows when the site can't be reached.
  */
 
 import type { CapacitorConfig } from '@capacitor/cli';
@@ -27,8 +28,7 @@ const config: CapacitorConfig = {
 		errorPath  : 'offline.html'
 	},
 	plugins : {
-		SplashScreen : { launchShowDuration : 1200, backgroundColor : '#111111', showSpinner : false },
-		StatusBar    : { style : 'DARK', backgroundColor : '#111111', overlaysWebView : false }
+		SplashScreen : { launchShowDuration : 1200, backgroundColor : '#111111', showSpinner : false }
 	}
 };
 
