@@ -16,6 +16,8 @@ phone app ──> player site (:3000) ──> MongoDB  <── game-server
 - App ID `com.casinodiko.app`, name **Diko**, Android 7 (API 24) and up.
 - The app adds `DikoApp/1.0` to the browser's user agent; the games use it
   to skip the "play in full screen?" prompt.
+- The app runs in landscape only (either way round): the tables are
+  landscape, and the lobby fits it.
 - When the site can't be reached, the app shows `www/offline.html` with a
   *Try again* button.
 
